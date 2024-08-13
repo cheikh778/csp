@@ -1,0 +1,204 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled {
+    background-color: #ffff !important;
+    color: #174fdd !important;
+}
+
+.navbar-brand img {
+    height: 80px;
+    width: 80px;
+}
+
+.nav-link {
+    /* background-color:#174fdd; */
+    border-radius: 10px;
+    color: #ffff;
+    transition: color 0.3s ease;
+    margin: 0 10px;
+}
+.nav-link.scrolled{
+    color: #174fdd !important;
+}
+
+.nav-link:hover {
+    color: #174fdd !important;
+    /* background-color: #ffff; */
+}
+
+/* Swiper Styles */
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-slide {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    color: white;
+    z-index: 10;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        bottom: 10%;
+        left: 10%;
+        font-size: 1.2rem;
+    }
+}
+
+/* About Section */
+#about img {
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section */
+.service-card {
+    border: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: #174fdd;
+    margin-bottom: 15px;
+}
+
+/* Testimonial Section */
+#testimonials{
+    height: 350px;
+}
+.testimonial-text {
+    font-style: italic;
+    color: #555;
+}
+
+#testimonials img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s;
+}
+
+/* Gallery Section */
+.gallery-slider {
+    height: 350px;
+}
+.gallery-img {
+    display: block;
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* Partners Section */
+.partners-slider{
+    height: 100px;
+    
+}
+.partners-slider .swiper-wrapper{
+    position: relative;
+    height: 100%;
+    margin-left: 20%;
+    margin-right: 30%;
+    
+}
+.bg-dark{
+    background-color: #174fdd !important;
+}
+.partner-logo {
+    max-height: 100px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* Counters */
+.counter {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Contact Section */
+#contact img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+#contact .form-label {
+    font-weight: bold;
+    color: #174fdd;
+}
+
+/* Footer */
+footer {
+    padding: 30px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #174fdd;
+}
+
+/* Button with Gradient */
+.btn-primary {
+    background: linear-gradient(45deg, #174fdd, #ffffff);
+    border: none;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #ffffff, #174fdd);
+}
+
+.bg-primary {
+    background-color: #174fdd !important;
+}
