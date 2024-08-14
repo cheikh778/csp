@@ -1,5 +1,5 @@
 // Initialize Swiper.js for Carousel
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('#header-carousel', {
     speed: 1000,
     loop: true,
     pagination: {
@@ -23,8 +23,8 @@ var gallerySwiper = new Swiper('.gallery-slider', {
         clickable: true,
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.gallery-next',
+        prevEl: '.gallery-prev',
     },
     breakpoints: {
         640: {
@@ -56,6 +56,10 @@ var partnerSwiper = new Swiper('.partners-slider', {
         delay: 2500,
         disableOnInteraction: false,
     },
+    navigation: {
+        nextEl: '.partners-next',
+        prevEl: '.partners-prev',
+    },
     breakpoints: {
         640: {
             slidesPerView: 1,
@@ -69,6 +73,22 @@ var partnerSwiper = new Swiper('.partners-slider', {
             slidesPerView: 4,
             spaceBetween: 20,
         },
+    },
+});
+
+// Initialize Swiper.js for Testimonials
+var testimonialSwiper = new Swiper('.testimonial-slider', {
+    speed: 800,
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.testimonial-next',
+        prevEl: '.testimonial-prev',
     },
 });
 
@@ -105,10 +125,8 @@ $(window).scroll(function () {
         $('#navbar').addClass('scrolled');
         $('.nav-link').addClass('scrolled');
         $('#navbar .navbar-brand img').attr('src', 'img/logo.png');
-
-        // Change navbar links color
-        // $('#navbar .nav-link').css('color', '#174fdd');
     } else {
         $('#navbar').removeClass('scrolled');
+        $('.nav-link').removeClass('scrolled');
     }
 });

@@ -1,339 +1,522 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSP - Complexe Scolaire la Persévérance</title>
-    <link rel="icon" href="img/logo.png" type="image/x-icon">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSP - Complexe Scolaire la Persévérance</title>
+        <link rel="icon" href="img/logo.png" type="image/x-icon">
 
-    <!-- AOS CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <!-- AOS CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+            rel="stylesheet">
 
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+        <!-- Font Awesome -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <!-- Swiper CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+            rel="stylesheet">
 
-<body>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.png" alt="CSP Logo" width="50" height="50">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Témoignages</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Galerie</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#partners">Partenaires</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <body>
 
-    <!-- Accueil avec Swiper.js -->
-    <header id="header-carousel" class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url('img/img1.jpeg');">
-                <div class="carousel-caption">
-                    <h1 data-aos="fade-up">Éthique</h1>
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="CSP Logo" width="50"
+                        height="50">
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" 
+                            href="#header-carousel">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">À
+                                propos</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#testimonials">Témoignages</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#gallery">Galerie</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#partners">Partenaires</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="swiper-slide" style="background-image: url('img/Muslim\ graduation-rafiki.png');">
-                <div class="carousel-caption">
-                    <h1 data-aos="fade-up">Excellence</h1>
-                </div>
-            </div>
-            <div class="swiper-slide" style="background-image: url('img/img1.jpeg');">
-                <div class="carousel-caption">
-                    <h1 data-aos="fade-up">Équité</h1>
-                </div>
-            </div>
-            
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </header>
+        </nav>
 
-    <!-- Section About -->
-    <section id="about" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6" data-aos="fade-right">
-                    <img src="img/about.jpg" class="img-fluid rounded shadow-sm" alt="À propos de CSP">
+        <!-- Accueil avec Swiper.js -->
+        <header id="header-carousel" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                    style="background-image: url('img/img1.jpeg');">
+                    <div class="carousel-caption">
+                        <h1 data-aos="fade-up">Éthique</h1>
+                        <p data-aos="fade-up" data-aos-delay="200">Nous
+                            inculquons à nos étudiants des principes éthiques
+                            solides, les préparant à être des citoyens
+                            responsables, honnêtes et respectueux dans tous les
+                            aspects de leur vie.</p>
+                    </div>
                 </div>
-                <div class="col-md-6" data-aos="fade-left">
-                    <h2>À propos de CSP</h2>
-                    <p>CSP - Complexe Scolaire la Persévérance est dédié à fournir une éducation de qualité axée sur l'éthique, l'excellence, et l'équité.</p>
+                <div class="swiper-slide"
+                    style="background-image: url('img/img1.jpeg');">
+                    <div class="carousel-caption">
+                        <h1 data-aos="fade-up">Excellence</h1>
+                        <p data-aos="fade-up" data-aos-delay="200">Nous visons
+                            l'excellence dans tout ce que nous entreprenons, en
+                            encourageant nos étudiants à toujours donner le
+                            meilleur d'eux-mêmes et à poursuivre des standards
+                            élevés dans leurs études et activités.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide"
+                    style="background-image: url('img/img1.jpeg');">
+                    <div class="carousel-caption">
+                        <h1 data-aos="fade-up">Équité</h1>
+                        <p data-aos="fade-up" data-aos-delay="200">Nous nous
+                            engageons à traiter chaque étudiant avec équité, en
+                            leur offrant les mêmes opportunités et en valorisant
+                            la diversité et l'inclusion au sein de notre
+                            communauté scolaire.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </header>
 
-    <!-- Services -->
-    <section id="services" class="py-5 text-white bg-primary" data-aos="fade-up">
-        <div class="container">
-            <h2 class="text-center mb-4">Nos Services</h2>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card service-card text-center shadow-sm" data-aos="zoom-in">
-                        <div class="card-body">
-                            <i class="fas fa-graduation-cap fa-3x mb-3"></i>
-                            <h5 class="card-title">Éducation de Qualité</h5>
-                            <p class="card-text">Nous offrons une éducation de qualité qui prépare les étudiants pour un avenir brillant.</p>
+        <!-- Section About -->
+        <section id="about" class="py-5 bg-light" data-aos="fade-up">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6" data-aos="fade-right">
+                        <img src="img/about.jpg"
+                            class="img-fluid rounded shadow-sm"
+                            alt="À propos de CSP">
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left">
+                        <h2>À propos de CSP</h2>
+                        <p>CSP - Complexe Scolaire la Persévérance est un
+                            établissement éducatif de renom dédié à l'excellence
+                            académique et au développement holistique de ses
+                            étudiants. Depuis sa création, CSP s'engage à
+                            fournir une éducation de qualité, fondée sur des
+                            valeurs solides telles que l'éthique, l'équité et
+                            l'excellence. Nous croyons fermement que chaque
+                            étudiant a le potentiel de réussir et de contribuer
+                            positivement à la société. Nos programmes éducatifs
+                            sont conçus pour encourager l'esprit critique, la
+                            créativité et l'innovation, tout en favorisant un
+                            environnement d'apprentissage inclusif et
+                            bienveillant.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="py-5 text-white bg-primary"
+            data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center mb-4">Nos Services</h2>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card service-card text-center shadow-sm"
+                            data-aos="zoom-in">
+                            <div class="card-body">
+                                <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                                <h5 class="card-title">Éducation de Qualité</h5>
+                                <p class="card-text">Nous offrons une éducation
+                                    rigoureuse et de haute qualité, axée sur le
+                                    développement intellectuel et personnel des
+                                    étudiants, en les préparant pour un avenir
+                                    réussi et brillant.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card service-card text-center shadow-sm"
+                            data-aos="zoom-in" data-aos-delay="200">
+                            <div class="card-body">
+                                <i
+                                    class="fas fa-chalkboard-teacher fa-3x mb-3"></i>
+                                <h5 class="card-title">Développement
+                                    personnel</h5>
+                                <p class="card-text">Nous aidons nos étudiants à
+                                    renforcer leur estime de soi, à développer
+                                    leurs compétences sociales et à atteindre
+                                    leur plein potentiel à travers des
+                                    programmes de développement personnel
+                                    adaptés.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card service-card text-center shadow-sm"
+                            data-aos="zoom-in" data-aos-delay="400">
+                            <div class="card-body">
+                                <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                                <h5 class="card-title">Cours de
+                                    renforcement</h5>
+                                <p class="card-text">Nous proposons des cours de
+                                    soutien pour aider les étudiants à combler
+                                    leurs lacunes académiques, renforcer leurs
+                                    connaissances et exceller dans leurs
+                                    études.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card service-card text-center shadow-sm" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="card-body">
-                            <i class="fas fa-chalkboard-teacher fa-3x mb-3"></i>
-                            <h5 class="card-title">Enseignants Qualifiés</h5>
-                            <p class="card-text">Nos enseignants sont hautement qualifiés et expérimentés pour assurer un apprentissage optimal.</p>
+            </div>
+        </section>
+
+        <!-- Témoignages -->
+        <section id="testimonials" class="py-5" data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center mb-4">Témoignages</h2>
+                <div class="swiper-container testimonial-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center">
+                            <img src="img/cheikh.jpeg" class="rounded-circle mb-3"
+                                alt="Étudiant 1">
+                            <p
+                                class="testimonial-text">"CSP m'a donné les outils pour réussir. Je recommande vivement cette école à tous les élèves."</p>
+                            <h5>- Serigne Cheikh NDAO</h5>
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <img src="img/magui.jpg" class="rounded-circle mb-3"
+                                alt="Étudiant 2">
+                            <p
+                                class="testimonial-text">"Les enseignants sont très compétents et dévoués. J'ai appris énormément à CSP."</p>
+                            <h5>- Madjiguene DIOP</h5>
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next testimonial-next"></div>
+                    <div class="swiper-button-prev testimonial-prev"></div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card service-card text-center shadow-sm" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="card-body">
-                            <i class="fas fa-laptop-code fa-3x mb-3"></i>
-                            <h5 class="card-title">Installations Modernes</h5>
-                            <p class="card-text">Nous disposons d'installations modernes et de technologies avancées pour soutenir l'apprentissage.</p>
+            </div>
+        </section>
+
+        <!-- Counters Section -->
+        <section id="counters" class="py-5 bg-primary text-white"
+            data-aos="fade-up">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <h2 class="counter">300</h2>
+                        <p>Réussites au BFEM</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="counter">90%</h2>
+                        <p>Taux de réussite au BFEM</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="counter">70</h2>
+                        <p>Réussites au BAC</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="counter">70%</h2>
+                        <p>Taux de réussite au BAC</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerie -->
+        <section id="gallery" class="py-5 bg-light" data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center mb-4">Galerie</h2>
+                <div class="swiper-container gallery-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/g1.jpeg" class="img-fluid gallery-img"
+                                alt="Gallery Image 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g2.jpeg" class="img-fluid gallery-img"
+                                alt="Gallery Image 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g3.jpeg" class="img-fluid gallery-img"
+                                alt="Gallery Image 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g4.jpeg" class="img-fluid gallery-img"
+                                alt="Gallery Image 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g5.jpeg" class="img-fluid gallery-img"
+                                alt="Gallery Image 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g6.jpeg" class="img-fluid gallery-img"
+                                alt="Gallery Image 6">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g7.jpeg" class="img-fluid gallery-img"
+                                alt="Gallery Image 7">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g8.jpeg" class="img-fluid gallery-img"
+                                alt="Gallery Image 8">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g9.jpeg" class="img-fluid gallery-img"
+                                alt="Gallery Image 9">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g10.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 10">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g11.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 11">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g12.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 12">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g13.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 13">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g14.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 14">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g15.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 15">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g16.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 16">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g17.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 17">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g18.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 18">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g19.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 19">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g20.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 20">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g21.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 21">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g22.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 22">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g23.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 23">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g24.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 24">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g25.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 25">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g26.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 26">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g27.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 27">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g28.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 28">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g29.jpeg"
+                                class="img-fluid gallery-img"
+                                alt="Gallery Image 29">
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next gallery-next"></div>
+                    <div class="swiper-button-prev gallery-prev"></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Témoignages -->
-    <section id="testimonials" class="py-5" data-aos="fade-up">
-        <div class="container">
-            <h2 class="text-center mb-4">Témoignages</h2>
-            <div class="swiper-container testimonial-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide text-center">
-                        <img src="img/logo.png" class="rounded-circle mb-3" alt="Étudiant 1">
-                        <p class="testimonial-text">"CSP m'a donné les outils pour réussir. Je recommande vivement cette école à tous les étudiants."</p>
-                        <h5>- Étudiant 1</h5>
-                    </div>
-                    <div class="swiper-slide text-center">
-                        <img src="img/logo.png" class="rounded-circle mb-3" alt="Étudiant 2">
-                        <p class="testimonial-text">"Les enseignants sont très compétents et dévoués. J'ai appris énormément à CSP."</p>
-                        <h5>- Étudiant 2</h5>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Galerie -->
-    <section id="gallery" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2 class="text-center mb-4">Galerie</h2>
-            <div class="swiper-container gallery-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="img/g1.jpeg" class="img-fluid gallery-img" alt="Gallery Image 1">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g2.jpeg" class="img-fluid gallery-img" alt="Gallery Image 2">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g3.jpeg" class="img-fluid gallery-img" alt="Gallery Image 3">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g4.jpeg" class="img-fluid gallery-img" alt="Gallery Image 4">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g5.jpeg" class="img-fluid gallery-img" alt="Gallery Image 5">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g6.jpeg" class="img-fluid gallery-img" alt="Gallery Image 6">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g7.jpeg" class="img-fluid gallery-img" alt="Gallery Image 7">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g8.jpeg" class="img-fluid gallery-img" alt="Gallery Image 8">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g9.jpeg" class="img-fluid gallery-img" alt="Gallery Image 9">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g10.jpeg" class="img-fluid gallery-img" alt="Gallery Image 10">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g11.jpeg" class="img-fluid gallery-img" alt="Gallery Image 11">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g12.jpeg" class="img-fluid gallery-img" alt="Gallery Image 12">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g13.jpeg" class="img-fluid gallery-img" alt="Gallery Image 13">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g14.jpeg" class="img-fluid gallery-img" alt="Gallery Image 14">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g15.jpeg" class="img-fluid gallery-img" alt="Gallery Image 15">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g16.jpeg" class="img-fluid gallery-img" alt="Gallery Image 16">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g17.jpeg" class="img-fluid gallery-img" alt="Gallery Image 17">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g18.jpeg" class="img-fluid gallery-img" alt="Gallery Image 18">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g19.jpeg" class="img-fluid gallery-img" alt="Gallery Image 19">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g20.jpeg" class="img-fluid gallery-img" alt="Gallery Image 20">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g21.jpeg" class="img-fluid gallery-img" alt="Gallery Image 21">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g22.jpeg" class="img-fluid gallery-img" alt="Gallery Image 22">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g23.jpeg" class="img-fluid gallery-img" alt="Gallery Image 23">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g24.jpeg" class="img-fluid gallery-img" alt="Gallery Image 24">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g25.jpeg" class="img-fluid gallery-img" alt="Gallery Image 25">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g26.jpeg" class="img-fluid gallery-img" alt="Gallery Image 26">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g27.jpeg" class="img-fluid gallery-img" alt="Gallery Image 27">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g28.jpeg" class="img-fluid gallery-img" alt="Gallery Image 28">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/g29.jpeg" class="img-fluid gallery-img" alt="Gallery Image 29">
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Partenaires -->
-    <section id="partners" class="py-5 bg-dark text-white" data-aos="fade-up">
-        <div class="container">
-            <h2 class="text-center mb-4">Nos Partenaires</h2>
-            <div class="swiper-container partners-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide text-center">
-                        <img src="img/logo.png" alt="Partenaire 1" class="img-fluid partner-logo">
-                    </div>
-                    <div class="swiper-slide text-center">
-                        <img src="img/logo.png" alt="Partenaire 2" class="img-fluid partner-logo">
-                    </div>
-                    <div class="swiper-slide text-center">
-                        <img src="img/logo.png" alt="Partenaire 2" class="img-fluid partner-logo">
-                    </div>
-                    <!-- Add more partner logos as needed -->
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2 class="text-center">Contactez-nous</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/Full inbox-rafiki.svg" class="img-fluid rounded shadow-sm" alt="Contactez-nous">
-                </div>
-                <div class="col-md-6">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nom</label>
-                            <input type="text" class="form-control form-control-lg" id="name">
+        <!-- Section Partenaires -->
+        <section id="partners" class="py-5 bg-dark text-white"
+            data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center mb-4">Nos Partenaires</h2>
+                <div class="swiper-container partners-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center">
+                            <img src="img/logo.png" alt="Partenaire 1"
+                                class="img-fluid partner-logo">
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control form-control-lg" id="email">
+                        <div class="swiper-slide text-center">
+                            <img src="img/logo.png" alt="Partenaire 2"
+                                class="img-fluid partner-logo">
                         </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control form-control-lg" id="message" rows="3"></textarea>
+                        <div class="swiper-slide text-center">
+                            <img src="img/logo.png" alt="Partenaire 2"
+                                class="img-fluid partner-logo">
                         </div>
-                        <button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
-                    </form>
+                        <!-- Add more partner logos as needed -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next partners-next"></div>
+                    <div class="swiper-button-prev partners-prev"></div>
                 </div>
             </div>
-            <div class="row mt-5">
-                <div class="col-md-6">
-                    <h5>Succursale 1</h5>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5103126891526!2d144.9630579156761!3d-37.814217979751474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f3e4e8f5%3A0xb3853b851d6ecf!2sVictoria%20Market%2C%20Melbourne!5e0!3m2!1sen!2sau!4v1627832455424!5m2!1sen!2sau" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="col-md-6">
-                    <h5>Succursale 2</h5>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5103126891526!2d144.9630579156761!3d-37.814217979751474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f3e4e8f5%3A0xb3853b851d6ecf!2sVictoria%20Market%2C%20Melbourne!5e0!3m2!1sen!2sau!4v1627832455424!5m2!1sen!2sau" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="py-4 bg-dark text-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2024 CSP - Complexe Scolaire la Persévérance</p>
+        <!-- Contact -->
+        <section id="contact" class="py-5 bg-light" data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center">Contactez-nous</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/Full inbox-rafiki.svg"
+                            class="img-fluid rounded shadow-sm"
+                            alt="Contactez-nous">
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nom</label>
+                                <input type="text"
+                                    class="form-control form-control-lg"
+                                    id="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email"
+                                    class="form-label">Email</label>
+                                <input type="email"
+                                    class="form-control form-control-lg"
+                                    id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message"
+                                    class="form-label">Message</label>
+                                <textarea class="form-control form-control-lg"
+                                    id="message" rows="3"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="btn btn-primary btn-lg">Envoyer</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="https://www.facebook.com/csperseverance.152" class="text-light mx-2"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/csperseverance152/" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h5>Parcelles Assainies U2 terrain bombine</h5>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.0147144992743!2d-17.418976924888973!3d14.768201172951347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec10cf1a6ea5079%3A0x858d7340e5409ed3!2s71%20Rue%20PA2%2029!5e0!3m2!1sen!2ssn!4v1723595192423!5m2!1sen!2ssn"
+                            width="100%" height="300" style="border:0;"
+                            allowfullscreen loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Fith mith, rue en face des Urgences de l'hôpital
+                            Dalal Jaam</h5>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.922455259509!2d-17.41007042488896!3d14.773397772822799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec10c8b4758ff75%3A0xd53d2168748d2393!2sCabinet%20Immo%20Service!5e0!3m2!1sen!2ssn!4v1723595276564!5m2!1sen!2ssn"
+                            width="100%" height="300" style="border:0;"
+                            allowfullscreen loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
 
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="script.js"></script>
-</body>
+        <!-- Footer -->
+        <footer class="py-4 bg-dark text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2024 CSP - Complexe Scolaire la
+                            Persévérance</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" class="text-light mx-2"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light mx-2"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light mx-2"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="script.js"></script>
+    </body>
 
 </html>
