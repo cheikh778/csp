@@ -51,7 +51,7 @@ body {
     height: 100vh;
 }
 
-.carousel-caption {
+/* .carousel-caption {
     text-align: center;
     position: absolute;
     bottom: 20%;
@@ -59,20 +59,55 @@ body {
     color: white;
     z-index: 10;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.carousel-caption p{
-    position: absolute;
+} */
+/* Styles pour les slogans dans le carousel */
+.carousel-caption h1 {
+    font-size: 4rem;
+    text-shadow: 3px 3px 5px #174fdd; 
+    color: #ffffff; 
     text-align: center;
-    margin-top: 50px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 500px;
+    
 }
 
+.carousel-caption p {
+    font-size: 1.0rem; 
+    text-shadow: 2px 2px 4px #174fdd; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 0px;
+    display: inline-block;
+    margin-top: 30px;
+    
+}
+
+/* Positionnement des slogans et des descriptions */
+.carousel-caption {
+    position: absolute;
+    top: 30%; /* Ajustez cette valeur pour placer le texte un peu plus haut */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Assurez-vous que le texte reste centré sur les petits écrans */
 @media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2.5rem; /* Réduisez la taille de la police pour les petits écrans */
+    }
+
+    .carousel-caption p {
+        font-size: 1.2rem; /* Réduisez la taille de la police pour les descriptions */
+    }
+
     .carousel-caption {
-        bottom: 10%;
-        left: 10%;
-        font-size: 1.2rem;
+        top: 40%; /* Ajustez le positionnement pour les petits écrans */
     }
 }
+
+
 
 /* About Section */
 #about img {

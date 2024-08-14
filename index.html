@@ -434,57 +434,30 @@
                 <h2 class="text-center">Contactez-nous</h2>
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="img/Full inbox-rafiki.svg"
-                            class="img-fluid rounded shadow-sm"
-                            alt="Contactez-nous">
+                        <img src="img/Full inbox-rafiki.svg" class="img-fluid rounded shadow-sm" alt="Contactez-nous">
                     </div>
                     <div class="col-md-6">
-                        <form>
+                        <!-- Formulaire de contact -->
+                        <form action="contact.php" method="POST">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nom</label>
-                                <input type="text"
-                                    class="form-control form-control-lg"
-                                    id="name">
+                                <input type="text" class="form-control form-control-lg" id="name" name="name" required>
                             </div>
                             <div class="mb-3">
-                                <label for="email"
-                                    class="form-label">Email</label>
-                                <input type="email"
-                                    class="form-control form-control-lg"
-                                    id="email">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control form-control-lg" id="email" name="email" required>
                             </div>
                             <div class="mb-3">
-                                <label for="message"
-                                    class="form-label">Message</label>
-                                <textarea class="form-control form-control-lg"
-                                    id="message" rows="3"></textarea>
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control form-control-lg" id="message" name="message" rows="3" required></textarea>
                             </div>
-                            <button type="submit"
-                                class="btn btn-primary btn-lg">Envoyer</button>
+                            <button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
                         </form>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-md-6">
-                        <h5>Parcelles Assainies U2 terrain bombine</h5>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.0147144992743!2d-17.418976924888973!3d14.768201172951347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec10cf1a6ea5079%3A0x858d7340e5409ed3!2s71%20Rue%20PA2%2029!5e0!3m2!1sen!2ssn!4v1723595192423!5m2!1sen!2ssn"
-                            width="100%" height="300" style="border:0;"
-                            allowfullscreen loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="col-md-6">
-                        <h5>Fith mith, rue en face des Urgences de l'hôpital
-                            Dalal Jaam</h5>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.922455259509!2d-17.41007042488896!3d14.773397772822799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec10c8b4758ff75%3A0xd53d2168748d2393!2sCabinet%20Immo%20Service!5e0!3m2!1sen!2ssn!4v1723595276564!5m2!1sen!2ssn"
-                            width="100%" height="300" style="border:0;"
-                            allowfullscreen loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </section>
+        
 
         <!-- Footer -->
         <footer class="py-4 bg-dark text-light">
