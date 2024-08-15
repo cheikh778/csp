@@ -49,70 +49,67 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Styles pour les slogans dans le carousel */
 .carousel-caption {
-    align-self: center;
-    align-content: center   ;
-}
-.carousel-caption h1 {
-    font-size: 4rem;
-    text-shadow: 3px 3px 5px #174fdd; 
-    color: #ffffff; 
     text-align: center;
+    max-width: 90%;
     padding: 10px;
     display: flex;
-    margin-top: 500px;
-    
+    flex-direction: column;
+    justify-content: center; /* Centrer verticalement */
+    align-items: center;
+    transform: translateY(-50%); /* Ajustement fin pour centrer */
+}
+
+.carousel-caption h1 {
+    font-size: 3.5vw; /* Utilisation de vw pour les titres */
+    text-shadow: 3px 3px 5px #174fdd; 
+    color: #ffffff; 
+    margin: 0;
 }
 
 .carousel-caption p {
-    font-size: 1.0rem; 
+    font-size: 1.2vw; /* Utilisation de vw pour les paragraphes */
     text-shadow: 2px 2px 4px #174fdd; 
     color: #ffffff; 
-    text-align: center;
-    padding: 0px;
-    display: flex;
-    margin-top: 30px;
-    
-}
-
-/* Positionnement des slogans et des descriptions */
-.carousel-caption {
-    position: absolute;
-    top: 30%; /* Ajustez cette valeur pour placer le texte un peu plus haut */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    margin-top: 6.0vh; /* Utilisation de vh pour les marges */
 }
 
 /* Assurez-vous que le texte reste centré sur les petits écrans */
 @media (max-width: 768px) {
     .carousel-caption h1 {
-        font-size: 2.5rem; /* Réduisez la taille de la police pour les petits écrans */
-        text-shadow: 3px 3px 5px #174fdd; 
-        color: #ffffff; 
-        text-align: center;
-        padding: 10px;
-        display: inline-block;
-        margin-top: 400px;
+        font-size: 6vw; /* Ajustement de la taille pour les petits écrans */
     }
 
     .carousel-caption p {
-        font-size: 1.0rem; /* Réduisez la taille de la police pour les descriptions */
-        text-shadow: 2px 2px 4px #174fdd; 
-        color: #ffffff; 
-        text-align: center;
-        padding: 0px;
-        display: inline-block;
-        margin-top: 30px;
+        font-size: 2.5vw; /* Ajustement de la taille pour les petits écrans */
     }
 
     .carousel-caption {
-        top: 40%; /* Ajustez le positionnement pour les petits écrans */
+        transform: translateY(-50%); /* Toujours centré verticalement */
     }
 }
+
+@media (max-width: 480px) {
+    .carousel-caption h1 {
+        font-size: 8vw; /* Ajustement de la taille pour les très petits écrans */
+    }
+
+    .carousel-caption p {
+        font-size: 3.5vw; /* Ajustement de la taille pour les très petits écrans */
+    }
+
+    .carousel-caption {
+        padding: 5px;
+        transform: translateY(-50%); /* Toujours centré verticalement */
+    }
+}
+
 
 
 
@@ -142,21 +139,66 @@ body {
     margin-bottom: 15px;
 }
 
-/* Testimonial Section */
+/* Section Témoignages */
 #testimonials {
-    height: 350px;
+    height: 40vh; /* Utilisation de vh pour s'adapter à la hauteur de l'écran */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .testimonial-text {
     font-style: italic;
     color: #555;
+    font-size: 1.vw; /* Utilisation de vw pour que le texte s'adapte à la largeur de l'écran */
+    margin: 10px 0;
+    max-width: 80%;
 }
 
 #testimonials img {
-    width: 100px;
-    height: 100px;
+    width: 10vw; /* Taille relative à l'écran pour s'adapter à la largeur */
+    height: 10vw; /* Assurer que l'image reste proportionnelle */
+    max-width: 100px; /* Limiter la taille maximale */
+    max-height: 100px; /* Limiter la taille maximale */
+    border-radius: 50%;
     transition: transform 0.3s;
 }
+
+/* Adaptations pour les petits écrans */
+@media (max-width: 768px) {
+    #testimonials {
+        height: auto; /* Laisser la section s'adapter automatiquement à la taille du contenu */
+        padding: 10px;
+    }
+
+    .testimonial-text {
+        font-size: 3.5vw; /* Ajustement pour que le texte soit plus lisible sur petits écrans */
+    }
+
+    #testimonials img {
+        width: 15vw; /* Taille légèrement plus grande pour petits écrans */
+        height: 15vw;
+        max-width: 80px; /* Limitation de la taille pour les petits écrans */
+        max-height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-text {
+        font-size: 4vw; /* Taille encore plus grande pour les très petits écrans */
+    }
+
+    #testimonials img {
+        width: 20vw; /* Ajustement pour s'assurer que les images restent visibles et proportionnées */
+        height: 20vw;
+        max-width: 70px; /* Limitation supplémentaire pour les très petits écrans */
+        max-height: 70px;
+    }
+}
+
 
 /* Gallery Section */
 .gallery-slider {
@@ -253,5 +295,8 @@ footer a:hover {
 }
 
 .bg-primary {
+    background-color: #174fdd !important;
+}
+.bg-dark{
     background-color: #174fdd !important;
 }
