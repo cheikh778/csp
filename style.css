@@ -38,7 +38,58 @@ body {
     color: #174fdd !important;
 }
 
-/* Swiper Styles */ .swiper-container { width: 100%; height: 100vh; } .swiper-slide { position: relative; background-size: cover; background-position: center; height: 100vh; display: flex; justify-content: center; align-items: center; } /* Styles pour les slogans dans le carousel */ .carousel-caption { text-align: center; max-width: 90%; padding: 10px; display: flex; flex-direction: column; justify-content: center; /* Centrer verticalement */ align-items: center; transform: translateY(-50%); /* Ajustement fin pour centrer */ } .carousel-caption h1 { font-size: 3.5vw; /* Utilisation de vw pour les titres */ text-shadow: 3px 3px 5px #174fdd; color: #ffffff; margin: 0; } .carousel-caption p { font-size: 1.2vw; /* Utilisation de vw pour les paragraphes */ text-shadow: 2px 2px 4px #174fdd; color: #ffffff; margin-top: 6.0vh; /* Utilisation de vh pour les marges */ } /* Assurez-vous que le texte reste centré sur les petits écrans */ @media (max-width: 768px) { .carousel-caption h1 { font-size: 6vw; /* Ajustement de la taille pour les petits écrans */ } .carousel-caption p { font-size: 2.5vw; /* Ajustement de la taille pour les petits écrans */ } .carousel-caption { transform: translateY(-50%); /* Toujours centré verticalement */ } } @media (max-width: 480px) { .carousel-caption h1 { font-size: 8vw; /* Ajustement de la taille pour les très petits écrans */ } .carousel-caption p { font-size: 3.5vw; /* Ajustement de la taille pour les très petits écrans */ } .carousel-caption { padding: 5px; transform: translateY(-50%); /* Toujours centré verticalement */ } }
+/* Swiper Styles */ 
+.swiper-container { width: 100%; height: 100vh; } 
+.swiper-slide { 
+    position: relative; background-size: cover; 
+    background-position: center; height: 100vh; 
+    display: flex; justify-content: center; 
+    align-items: center; 
+} 
+/* Styles pour les slogans dans le carousel */ 
+.carousel-caption { 
+    text-align: center; 
+    max-width: 90%; padding: 10px; display: flex; 
+    flex-direction: column; 
+    justify-content: center; /* Centrer verticalement */ 
+    align-items: center; transform: translateY(-50%); /* Ajustement fin pour centrer */ 
+}
+.carousel-caption h1 { 
+    font-size: 3.5vw; /* Utilisation de vw pour les titres */ 
+    text-shadow: 3px 3px 5px #174fdd; 
+    color: #ffffff; 
+    margin: 0; 
+    margin-left: 20%;
+    margin-right: 20%;
+} 
+.carousel-caption p { 
+    font-size: 1.2vw; /* Utilisation de vw pour les paragraphes */ 
+    text-shadow: 2px 2px 4px #174fdd; 
+    color: #ffffff; margin-top: 6.0vh; /* Utilisation de vh pour les marges */ 
+} /* Assurez-vous que le texte reste centré sur les petits écrans */ 
+@media (max-width: 768px) {
+    .carousel-caption h1 { 
+        font-size: 6vw; /* Ajustement de la taille pour les petits écrans */
+    } 
+    .carousel-caption p { 
+        font-size: 2.5vw; /* Ajustement de la taille pour les petits écrans */
+    } 
+    .carousel-caption { 
+        transform: translateY(-50%); /* Toujours centré verticalement */ 
+    }
+}
+@media (max-width: 480px) {
+    .carousel-caption h1 {
+        font-size: 8vw; /* Ajustement de la taille pour les très petits écrans */ 
+    } 
+    .carousel-caption p { 
+        font-size: 3.5vw; /* Ajustement de la taille pour les très petits écrans */ 
+    } 
+    .carousel-caption { 
+        padding: 5px; 
+        transform: translateY(-50%); /* Toujours centré verticalement */
+    } 
+}
 
 
 
