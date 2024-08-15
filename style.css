@@ -39,7 +39,9 @@ body {
 }
 
 /* Swiper Styles */ 
-#header-carousel .swiper-container { width: 100%; height: 100vh; } 
+#header-carousel .swiper-container { 
+    width: 100%; height: 100vh; 
+} 
 #header-carousel .swiper-slide { 
     position: relative; background-size: cover; 
     background-position: center; height: 100vh; 
