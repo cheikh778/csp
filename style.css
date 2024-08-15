@@ -37,6 +37,17 @@ body {
 .nav-link:hover {
     color: #174fdd !important;
 }
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28124, 124, 124, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-toggler {
+    border-color: #174fdd; /* Ajouter une couleur de bordure */
+}
+
+.navbar-toggler-icon {
+    background-color: #174fdd; /* Ajouter une couleur de fond pour le bouton */
+}
+
 
 /* Swiper Styles */ 
 #header-carousel .swiper-container { 
@@ -218,6 +229,27 @@ footer a {
 footer a:hover {
     color: #174fdd;
 }
+.copy{
+    color: #ffffff;
+    margin-top: 2%;
+}
+.soc{
+    margin-right: 10%;
+}
+.num{
+    display: flex;
+}
+.cheikh{
+    background-color: #ffffff; 
+    color: #174fdd; 
+    border-radius: 10px;
+}
+.cheikh:hover{
+    background-color: #174fdd; 
+    color: #ffffff; 
+    border-radius: 10px;
+}
+
 
 /* Button with Gradient */
 .btn-primary {
