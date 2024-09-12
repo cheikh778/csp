@@ -27,6 +27,7 @@ class VerificationController extends Controller
         $user->save();
 
         // Envoi de l'email avec les informations de connexion temporaires
+        $user = User::find($id);
         Mail::to($user->email)->send(new TemporaryLoginMail($user));
 
         // Redirection avec succès

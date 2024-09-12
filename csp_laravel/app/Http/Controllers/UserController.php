@@ -45,6 +45,7 @@ class UserController extends Controller
             ]);
 
             // Envoi de l'email de vérification
+            $user = User::find($id);
             Mail::to($user->email)->send(new VerificationMail($user));
 
             // Redirection en cas de succès
