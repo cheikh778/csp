@@ -6,6 +6,8 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\VerificationController;
+use App\Http\Controllers\PartnerController;
+use App\Http\Controllers\GaleryController;
 //   use App\Http\Controllers\
 
 Route::get('/', function () {
@@ -37,9 +39,14 @@ Route::get('/', function () {
 
     //admin
     Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
-    Route::post('/dashboard/change-header-background', [AdminController::class, 'changeHeaderBackground'])->name('change.header.background');
-    Route::post('/dashboard/add-partner', [AdminController::class, 'addPartner'])->name('add.partner');
-    Route::post('/dashboard/add-gallery-photo', [AdminController::class, 'addGalleryPhoto'])->name('add.gallery.photo');
-    Route::post('/dashboard/add-admin', [AdminController::class, 'addAdmin'])->name('add.admin');
-    Route::post('/dashboard/update-info', [AdminController::class, 'updateInfo'])->name('update.info');
 
+
+    //galerie
+    Route::get('/add-gallery-photo', [GaleryController::class, 'create'])->name('ajouter une photo');
+    Route::post('/add-gallery-photo', [GaleryController::class, 'store'])->name('gallery.add.post');
+    Route::get('/galleries', [GaleryController::class, 'index'])->name('galeries');
+    Route::get('/gallery/{id}', [GaleryController::class, 'show'])->name('gallery.show');
+    Route::get('/gallery/edit/{id}', [GaleryController::class, 'edit'])->name('gallery.edit');
+    Route::post('/gallery/edit/{id}', [GaleryController::class, 'update'])->name('gallery.update');
+    Route::get('/gallery/delete/{id}', [GaleryController::class, 'destroy'])->name('gallery.delete');
+    Route::post('/gallery/delete-multiple', [GaleryController::class, 'deleteMultiple'])->name('gallery.delete.multiple');

@@ -60,7 +60,7 @@ class UserController extends Controller
     public function blockUser($id)
     {
         $user = User::find($id);
-        $user->status = 0; // Suspendre l'utilisateur
+        $user->status = 0; 
         $user->save();
 
         return redirect()->back()->with('success', 'Utilisateur bloqué avec succès.');

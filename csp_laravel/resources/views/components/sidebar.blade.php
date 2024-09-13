@@ -42,8 +42,8 @@
                      <li>
                         <a href="#apps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-object-group white_color"></i> <span>Galeries</span></a>
                         <ul class="collapse list-unstyled" id="apps">
-                           <li><a href="email.html">> <span>Photos</span></a></li>
-                           <li><a href="calendar.html">> <span>Ajouter un souvenir</span></a></li>
+                           <li><a href="{{route('galeries')}}">> <span>Photos</span></a></li>
+                           <li><a href="{{route('ajouter une photo')}}">> <span>Ajouter un souvenir</span></a></li>
 
                         </ul>
                      </li>
@@ -63,13 +63,39 @@
                      </li>
 
                      <li class="active">
+                        <a href="#partner" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa  fa-flag white_color"></i> <span>Partenaire</span></a>
+                        <ul class="collapse list-unstyled" id="partner">
+                           <li>
+                              <a href="">> <span>Ajouter un partenaire</span></a>
+                           </li>
+                           <li>
+                              <a href="">> <span>Les partenaires</span></a>
+                           </li>
+
+                        </ul>
+                     </li>
+
+                     <li class="active">
                         <a href="#settings" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa  fa-cog white_color"></i> <span>Paramètre</span></a>
                         <ul class="collapse list-unstyled" id="settings">
                            <li>
-                              <a href="profile.html">> <span>Modifier mon profile</span></a>
+                              <a href="">> <span>Modifier mon profile</span></a>
                            </li>
                            <li>
-                              <a href="project.html">> <span>Liste des posts</span></a>
+                              <a href="">> <span>Liste des posts</span></a>
+                           </li>
+
+                        </ul>
+                     </li>
+
+                     <li class="active">
+                        <a href="#settings" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa  fa-cog white_color"></i> <span>Paramètre</span></a>
+                        <ul class="collapse list-unstyled" id="settings">
+                           <li>
+                              <a href="">> <span>Modifier mon profile</span></a>
+                           </li>
+                           <li>
+                              <a href="">> <span>Liste des posts</span></a>
                            </li>
 
                         </ul>

@@ -130,6 +130,9 @@
                 <div class="swiper-slide">
                     <img src="{{ asset('storage/img/g2.jpeg') }}" class="img-fluid gallery-img" alt="Gallery Image 2">
                 </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('storage/img/g3.jpeg') }}" class="img-fluid gallery-img" alt="Gallery Image 2">
+                </div>
                 <!-- Ajoutez d'autres images ici -->
             </div>
             <div class="swiper-pagination"></div>

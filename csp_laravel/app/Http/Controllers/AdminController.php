@@ -10,7 +10,8 @@ class AdminController extends Controller
     // Méthodes du contrôleur
     public function index()
     {
-        return view('dashboard');
+        $nombreUtilisateurs = User::count();
+        return view('dashboard', compact('nombreUtilisateurs'));
     }
 
     public function changeHeaderBackground(Request $request)
